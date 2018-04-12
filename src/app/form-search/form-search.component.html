@@ -1,0 +1,23 @@
+<div class="card">
+  <form  id="myform" #cherche = "ngForm" (ngSubmit) = "submiSearch(cherche.value)" style="padding: 10px;" class="row center">
+   <mat-form-field class="full-width">
+        <mat-select matInput  name="localite"  placeholder="localites" ngModel>
+           <mat-option *ngFor="let l of localites" >
+             {{ l.libelle }}
+           </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-select matInput  name="type" placeholder="types" ngModel>
+           <mat-option *ngFor="let t of types" [value]="t.id">
+             {{ t.libelle }}
+           </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="demo-full-width">    
+        <input type="number" matInput placeholder="prix" name="prix"  ngModel>    
+    </mat-form-field>
+        
+    <button type="submit" mat-raised-button color="accent">rechercher</button>   
+    </form>
+  </div>

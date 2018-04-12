@@ -1,0 +1,18 @@
+
+<app-nav></app-nav>
+<br>
+<app-form-search></app-form-search>
+<mat-grid-list class="ok" cols="3"  >
+<mat-grid-tile class="mycard" *ngFor="let bien of BIENS" >   
+<app-catalogue  [bien]="bien"></app-catalogue>    
+</mat-grid-tile>
+</mat-grid-list>
+<br>
+<ul class="pagination center">
+    <li color="accent" class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+    <li class="active"><a href="#!">1</a></li>
+    <li class="waves-effect"><a href="#!">2</a></li>
+    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+  </ul>
+<app-footer></app-footer>
+

@@ -1,0 +1,25 @@
+
+  
+  <mat-card class="example-card mescard"   >
+    <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{bien.nombien}}</mat-card-title>
+    </mat-card-header>
+    <img class="image" mat-card-image src="data:image/jpg;base64,{{bien.images[0].image}}" alt="Photo of a Shiba Inu">
+
+    
+    <mat-card-content>
+    <p>{{bien.description}}</p>
+     <p> <i class="fa fa-money" aria-hidden="true"></i> {{bien.prixlocation}} FCFA</p>
+    
+    <p> <i class="material-icons">location_on</i>{{bien.localite.libelle}} </p>
+    </mat-card-content>
+    <mat-card-actions style="height:150px">
+    <button mat-raised-button color="accent">Reserver</button>
+    
+              
+              
+    </mat-card-actions>
+    </mat-card>
+
+    
